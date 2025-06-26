@@ -61,11 +61,14 @@ public class BController {
 //		model.addAttribute("request",request);
 //		command=new BWriteCommand();
 //		command.execute(model);
+
+
 		String bname=request.getParameter("bname");
 		String btitle=request.getParameter("btitle");
 		String bcontent=request.getParameter("bcontent");
-		iDao.write(bname, btitle, bcontent);
+
 		
+		iDao.write(bname, btitle, bcontent);
 		return "redirect:list";
 	}
 	@RequestMapping("/content_view")
