@@ -17,4 +17,11 @@ public interface IDao {
 	public void modify(String bid,String bname,
 			String btitle,String bcontent);
 	public BDto reply_view(String sbid);
+	
+	public void reply(String bid,String bname,
+			String btitle,String bcontent,
+			String bgroup,String bstep, String bindent);
+	public void replyShape(String strgroup,
+			String strstep);
+	public void delete(String bid);
 }
