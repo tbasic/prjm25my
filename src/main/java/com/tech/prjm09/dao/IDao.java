@@ -13,5 +13,5 @@ public interface IDao {
 			String bcontent);
 
 	public BDto contentView(String sbid);
-
+	public BDto modifyView(String sbid);
 }
